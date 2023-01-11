@@ -8,7 +8,7 @@ set -euo pipefail
 cd $(dirname ${BASH_SOURCE[0]})
 SHELL_FOLDER=$(pwd)
 
-ARCH=$(uname -i)
+ARCH=$(uname  -m)
 echo -e "CPU Archicture: \033[32m$ARCH\033[0m"
 
 echo "download [appimagetool](https://github.com/AppImage/AppImageKit)"
